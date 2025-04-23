@@ -1,0 +1,37 @@
+eze-website/
+├── prisma/
+│   └── schema.prisma
+├── public/
+│   └── images/
+│       └── logo.svg
+├── src/
+│   ├── components/
+│   │   ├── AlbumCard.tsx
+│   │   ├── AlbumModal.tsx
+│   │   ├── TagFilter.tsx
+│   │   └── Layout.tsx
+│   ├── styles/
+│   │   ├── globals.scss
+│   │   ├── components/
+│   │   │   ├── AlbumCard.module.scss
+│   │   │   ├── AlbumModal.module.scss
+│   │   │   ├── TagFilter.module.scss
+│   │   │   └── Layout.module.scss
+│   │   └── variables.scss
+│   ├── types/
+│   │   └── index.ts
+│   ├── lib/
+│   │   └── prisma.ts
+│   ├── pages/
+│   │   ├── _app.tsx
+│   │   ├── _document.tsx
+│   │   ├── index.tsx
+│   │   └── api/
+│   │       └── albums.ts
+│   └── utils/
+│       └── theme.ts
+├── .env
+├── .gitignore
+├── next.config.js
+├── package.json
+└── tsconfig.json

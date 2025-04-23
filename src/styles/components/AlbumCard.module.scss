@@ -1,0 +1,77 @@
+.card {
+	position: relative;
+	border-radius: 8px;
+	overflow: hidden;
+	background: var(--card-bg);
+	transition: transform 0.2s ease;
+	cursor: pointer;
+	border: 1px solid var(--border);
+
+	&:hover {
+		transform: translateY(-4px);
+	}
+}
+
+.imageContainer {
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%; // Makes it square
+}
+
+.image {
+	object-fit: cover;
+}
+
+.content {
+	padding: 1rem;
+}
+
+.title {
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	color: var(--text-primary);
+}
+
+.meta {
+	display: flex;
+	justify-content: space-between;
+	color: var(--text-secondary);
+	font-size: 0.9rem;
+	margin-bottom: 0.5rem;
+}
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.tag {
+	font-size: 0.75rem;
+	padding: 0.25rem 0.5rem;
+	border-radius: 9999px;
+	font-weight: 500;
+}
+
+// Tag-specific colors
+.tagMusic {
+	background-color: #e5f6fd;
+	color: #0369a1;
+}
+
+.tagMastering {
+	background-color: #f1f5f9;
+	color: #475569;
+}
+
+.tagProduction {
+	background-color: #fef3c7;
+	color: #92400e;
+}
+
+.tagMixing {
+	background-color: #ecfdf5;
+	color: #047857;
+}

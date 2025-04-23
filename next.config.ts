@@ -1,7 +1,13 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+	reactStrictMode: true,
+	sassOptions: {
+		includePaths: ["./src/styles"],
+		prependData: `@use "_variables.scss" as *;`,
+	},
+	images: {
+		domains: ["localhost"],
+	},
 };
 
-export default nextConfig;
+module.exports = nextConfig;

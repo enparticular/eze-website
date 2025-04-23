@@ -1,0 +1,59 @@
+:root {
+	// Colors
+	--primary: #3b82f6;
+	--primary-dark: #2563eb;
+	--primary-light: #60a5fa;
+
+	// Light theme colors
+	--background: #f9fafb;
+	--card-bg: #ffffff;
+	--text-primary: #111827;
+	--text-secondary: #4b5563;
+	--text-tertiary: #6b7280;
+	--border: #e5e7eb;
+	--modal-backdrop: rgba(0, 0, 0, 0.5);
+
+	// Transitions
+	--transition-speed: 0.2s;
+}
+
+body {
+	margin: 0;
+}
+
+.dark-mode {
+	// Dark theme colors
+	--background: #111827;
+	--card-bg: #1f2937;
+	--text-primary: #f9fafb;
+	--text-secondary: #e5e7eb;
+	--text-tertiary: #d1d5db;
+	--border: #374151;
+	--modal-backdrop: rgba(0, 0, 0, 0.7);
+}
+.loading-state {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 300px;
+	color: var(--text-tertiary);
+	font-size: 1.125rem;
+	width: 100%;
+
+	&::before {
+		content: "";
+		width: 1.5rem;
+		height: 1.5rem;
+		margin-right: 0.75rem;
+		border: 3px solid var(--border);
+		border-radius: 50%;
+		border-top-color: var(--primary);
+		animation: spinner 0.8s linear infinite;
+	}
+}
+
+@keyframes spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}
