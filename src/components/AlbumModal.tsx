@@ -5,6 +5,12 @@ import { AlbumType } from "@/types";
 import styles from "@/styles/components/AlbumModal.module.scss";
 import Image from "next/image";
 
+import { Nunito_Sans } from "next/font/google";
+const nunitoSans = Nunito_Sans({
+	subsets: ["latin"],
+	display: "swap",
+});
+
 interface AlbumModalProps {
 	album: AlbumType;
 	onClose: () => void;
@@ -23,48 +29,38 @@ const AlbumModal: FC<AlbumModalProps> = ({ album, onClose }) => {
 	return (
 		<div className={styles.backdrop} onClick={handleBackdropClick}>
 			<div className={styles.modal}>
-				<div className={styles.header}>
-					<div>
-						<h2 className={styles.title}>{album.name}</h2>
-						<p className={styles.subtitle}>
-							{album.artist} • {album.year}
-						</p>
-					</div>
-					<button
-						className={styles.closeButton}
-						onClick={onClose}
-						aria-label="Close"
+				<button
+					className={styles.closeButton}
+					onClick={onClose}
+					aria-label="Close"
+				>
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
 					>
-						<svg
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M6 18L18 6M6 6L18 18"
-								stroke="currentColor"
-								strokeWidth="2"
-								strokeLinecap="round"
-								strokeLinejoin="round"
-							/>
-						</svg>
-					</button>
-				</div>
+						<path
+							d="M6 18L18 6M6 6L18 18"
+							stroke="currentColor"
+							strokeWidth="2"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+						/>
+					</svg>
+				</button>
 
 				<div className={styles.content}>
 					<div className={styles.imageContainer}>
 						<Image
 							src={album.coverArt}
 							alt={`${album.name} cover`}
-							fill
+							width={300}
+							height={300}
 							sizes="(max-width: 768px) 100vw, 300px"
 							className={styles.image}
 						/>
-					</div>
-
-					<div className={styles.details}>
 						<section className={styles.section}>
 							<h3 className={styles.sectionTitle}>Links</h3>
 							<div className={styles.links}>
@@ -86,20 +82,25 @@ const AlbumModal: FC<AlbumModalProps> = ({ album, onClose }) => {
 							<h3 className={styles.sectionTitle}>Tags</h3>
 							<div className={styles.tags}>
 								{album.tags.map((tag) => (
-									<span
+									<div
 										key={tag.id}
-										className={`${styles.tag} ${styles[`tag${tag.name}`]}`}
+										className={`${styles.tag} ${styles[`tag-${tag.name}`]}`}
 									>
 										{tag.name}
-									</span>
+									</div>
 								))}
 							</div>
 						</section>
+					</div>
 
+					<div className={styles.details}>
 						<section className={styles.section}>
-							<h3 className={styles.sectionTitle}>Description</h3>
+							<h2 className={styles.title}>
+								{album.name} ({album.year})
+							</h2>
+							<p className={styles.subtitle}>{album.artist}</p>
 							<div
-								className={styles.description}
+								className={`{styles.description} ${nunitoSans.className}`}
 								dangerouslySetInnerHTML={{ __html: album.description }}
 							/>
 						</section>

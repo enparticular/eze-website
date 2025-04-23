@@ -28,21 +28,14 @@ const AlbumCard: FC<AlbumCardProps> = ({ album, onClick }) => {
 					<p className={styles.artist}>{album.artist}</p>
 				</div>
 				<div className={styles.tags}>
-					{album.tags.map(
-						(tag) => (
-							console.log(tag),
-							(
-								<div
-									key={tag.id}
-									className={`${styles.tag} ${
-										styles["tag-" + tag.name.toLowerCase()]
-									}`}
-								>
-									{tag.name}
-								</div>
-							)
-						)
-					)}
+					{album.tags.map((tag) => (
+						<div
+							key={tag.id}
+							className={`${styles.tag} ${styles[`tag-${tag.name}`]}`}
+						>
+							{tag.name}
+						</div>
+					))}
 				</div>
 			</div>
 		</div>

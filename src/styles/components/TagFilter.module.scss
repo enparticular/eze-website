@@ -33,6 +33,7 @@
 	border: 1px solid #fff;
 	&:hover {
 		background-color: var(--border);
+		color: #326061;
 	}
 
 	&.active {
@@ -40,7 +41,8 @@
 		color: #326061;
 
 		&:hover {
-			background-color: var(--primary-dark);
+			background-color: #fff;
+			color: #326061;
 		}
 	}
 }

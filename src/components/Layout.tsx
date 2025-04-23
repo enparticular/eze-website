@@ -2,6 +2,7 @@
 
 import { FC, ReactNode, useState, useEffect } from "react";
 import Head from "next/head";
+
 import { initTheme, toggleTheme } from "@/utils/theme";
 
 import styles from "@/styles/components/Layout.module.scss";
@@ -85,10 +86,6 @@ const Layout: FC<LayoutProps> = ({
 			</header>
 
 			<main className={styles.main}>{children}</main>
-
-			<footer className={styles.footer}>
-				<p>&copy; {new Date().getFullYear()} Music Album Database</p>
-			</footer>
 		</div>
 	);
 };

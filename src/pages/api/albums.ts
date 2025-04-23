@@ -14,48 +14,36 @@ export default async function handler(
 			const { tag } = req.query;
 
 			// Base query
-			let albums;
+			const albums = await prisma.album.findMany({
+				where:
+					tag && tag !== "all"
+						? {
+								tags: {
+									some: {
+										name: tag as string,
+									},
+								},
+						  }
+						: undefined,
+				include: {
+					links: true,
+					tags: true,
+				},
+				orderBy: {
+					year: "desc",
+				},
+			});
 
-			if (tag && tag !== "all") {
-				// Filter by tag
-				albums = await prisma.album.findMany({
-					where: {
-						tags: {
-							some: {
-								name: tag as string,
-							},
-						},
-					},
-					include: {
-						links: true,
-						tags: true,
-					},
-					orderBy: {
-						year: "desc",
-					},
-				});
-			} else {
-				// Get all albums
-				albums = await prisma.album.findMany({
-					include: {
-						links: true,
-						tags: true,
-					},
-					orderBy: {
-						year: "desc",
-					},
-				});
-			}
-
-			// Format the response data
+			// Format the response data - keep full tag objects
 			const formattedAlbums = albums.map((album) => ({
 				...album,
-				tags: album.tags.map((tag) => tag.name),
+				createdAt: album.createdAt.toISOString(),
+				updatedAt: album.updatedAt.toISOString(),
+				// Don't transform tags, keep them as objects with id and name
 			}));
 
 			return res.status(200).json(formattedAlbums);
 		} else {
-			// Method not allowed
 			return res.status(405).json({ message: "Method not allowed" });
 		}
 	} catch (error) {
