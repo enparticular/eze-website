@@ -13,7 +13,7 @@ interface TagFilterProps {
 const TagFilter: FC<TagFilterProps> = ({ tags, activeTag, onTagSelect }) => {
 	return (
 		<div className={styles.container}>
-			<h2 className={styles.title}>Filter by Tag</h2>
+			<h2 className={styles.title}>Filtros:</h2>
 			<div className={styles.tagList}>
 				{tags.map((tag) => (
 					<button

@@ -1,11 +1,12 @@
 .container {
 	margin-bottom: 2rem;
+	text-align: center;
 }
 
 .title {
-	font-size: 1.25rem;
-	font-weight: 700;
-	color: var(--text-primary);
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #fff;
 	margin: 0 0 1rem;
 }
 
@@ -13,26 +14,30 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.5rem;
+	justify-content: center;
 }
 
 .tag {
+	font-family: "m6x11", "Courier New", Courier, monospace;
+	font-size: 16px;
 	padding: 0.5rem 1rem;
-	border-radius: 9999px;
-	font-size: 0.875rem;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 16px;
 	font-weight: 500;
 	border: none;
 	cursor: pointer;
+	border-radius: 10px;
 	transition: all var(--transition-speed) ease;
 	background-color: var(--background);
-	color: var(--text-secondary);
-
+	border: 1px solid #fff;
 	&:hover {
 		background-color: var(--border);
 	}
 
 	&.active {
-		background-color: var(--primary);
-		color: white;
+		background-color: white;
+		color: #326061;
 
 		&:hover {
 			background-color: var(--primary-dark);

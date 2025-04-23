@@ -1,14 +1,14 @@
 .card {
 	position: relative;
-	border-radius: 8px;
+	cursor: pointer;
+	border-radius: 12px;
 	overflow: hidden;
 	background: var(--card-bg);
-	transition: transform 0.2s ease;
+	transition: transform 0.3s ease;
 	cursor: pointer;
-	border: 1px solid var(--border);
-
+	box-shadow: 6px 6px 2px 0px rgba(0, 0, 0, 0.3);
 	&:hover {
-		transform: translateY(-4px);
+		transform: translateY(-5px);
 	}
 }
 
@@ -27,51 +27,51 @@
 }
 
 .title {
-	font-size: 1.1rem;
-	font-weight: 600;
-	margin-bottom: 0.5rem;
+	font-size: 26px;
+	text-align: center;
+	letter-spacing: 0.05rem;
+	text-transform: uppercase;
+	margin-bottom: 0;
 	color: var(--text-primary);
 }
 
 .meta {
-	display: flex;
-	justify-content: space-between;
-	color: var(--text-secondary);
-	font-size: 0.9rem;
-	margin-bottom: 0.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--text-primary);
+	font-size: 22px;
+	margin-bottom: 0 0 0.5rem;
 }
 
 .tags {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	gap: 0.5rem;
 	margin-top: 0.5rem;
 }
 
 .tag {
-	font-size: 0.75rem;
-	padding: 0.25rem 0.5rem;
-	border-radius: 9999px;
-	font-weight: 500;
-}
-
-// Tag-specific colors
-.tagMusic {
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 8px 11px 4px;
+	border-radius: 7px;
 	background-color: #e5f6fd;
-	color: #0369a1;
+	color: #fff;
 }
 
-.tagMastering {
-	background-color: #f1f5f9;
-	color: #475569;
+.tag-music {
+	background-color: #03afa2;
 }
 
-.tagProduction {
-	background-color: #fef3c7;
-	color: #92400e;
+.tag-mastering {
+	background-color: #e0bd19;
 }
 
-.tagMixing {
-	background-color: #ecfdf5;
-	color: #047857;
+.tag-production {
+	background-color: #cf441e;
+}
+
+.tag-mixing {
+	background-color: #155ec2;
 }

@@ -14,8 +14,8 @@ interface LayoutProps {
 
 const Layout: FC<LayoutProps> = ({
 	children,
-	title = "Music Album Database",
-	description = "Browse our collection of music albums",
+	title = "Ezequiel Rivero",
+	description = "Lista de discos producidos en los últimos 20 años!",
 }) => {
 	const [isDarkMode, setIsDarkMode] = useState(false);
 
