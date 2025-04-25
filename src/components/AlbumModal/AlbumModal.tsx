@@ -100,7 +100,7 @@ const AlbumModal: FC<AlbumModalProps> = ({ album, onClose }) => {
 							</h2>
 							<p className={styles.subtitle}>{album.artist}</p>
 							<div
-								className={`{styles.description} ${nunitoSans.className}`}
+								className={`${styles.description} ${nunitoSans.className}`}
 								dangerouslySetInnerHTML={{ __html: album.description }}
 							/>
 						</section>

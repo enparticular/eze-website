@@ -29,24 +29,26 @@ export default function ThemeProvider({ children }: { children: ReactNode }) {
 	useEffect(() => {
 		const isDark =
 			localStorage.getItem("theme") === "dark" ||
-			(!localStorage.getItem("theme") &&
-				window.matchMedia("(prefers-color-scheme: dark)").matches);
+			!localStorage.getItem("theme");
 
 		setIsDarkMode(isDark);
-		document.documentElement.setAttribute(
-			"data-theme",
-			isDark ? "dark" : "light"
-		);
+		if (isDark) {
+			document.body.classList.add("dark-mode");
+		} else {
+			document.body.classList.remove("dark-mode");
+		}
 	}, []);
 
 	const toggleTheme = () => {
 		const newTheme = !isDarkMode;
 		setIsDarkMode(newTheme);
 		localStorage.setItem("theme", newTheme ? "dark" : "light");
-		document.documentElement.setAttribute(
-			"data-theme",
-			newTheme ? "dark" : "light"
-		);
+
+		if (newTheme) {
+			document.body.classList.add("dark-mode");
+		} else {
+			document.body.classList.remove("dark-mode");
+		}
 	};
 
 	return (
