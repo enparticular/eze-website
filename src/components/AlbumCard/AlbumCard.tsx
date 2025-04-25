@@ -1,6 +1,8 @@
+"use client";
+
 import { FC } from "react";
 import { AlbumType } from "@/types";
-import styles from "@/styles/components/AlbumCard.module.scss";
+import styles from "./AlbumCard.module.scss";
 import Image from "next/image";
 
 interface AlbumCardProps {
@@ -8,7 +10,7 @@ interface AlbumCardProps {
 	onClick: (album: AlbumType) => void;
 }
 
-const AlbumCard: FC<AlbumCardProps> = ({ album, onClick }) => {
+export const AlbumCard: FC<AlbumCardProps> = ({ album, onClick }) => {
 	return (
 		<div className={styles.card} onClick={() => onClick(album)}>
 			<div className={styles.imageContainer}>

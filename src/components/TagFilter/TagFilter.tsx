@@ -1,8 +1,8 @@
-// src/components/TagFilter.tsx
+"use client";
 
 import { FC } from "react";
 import { TagFilterType } from "@/types";
-import styles from "@/styles/components/TagFilter.module.scss";
+import styles from "./TagFilter.module.scss";
 
 interface TagFilterProps {
 	tags: TagFilterType[];
@@ -10,7 +10,11 @@ interface TagFilterProps {
 	onTagSelect: (tag: TagFilterType) => void;
 }
 
-const TagFilter: FC<TagFilterProps> = ({ tags, activeTag, onTagSelect }) => {
+const TagFilter: FC<TagFilterProps> = ({
+	tags = [],
+	activeTag = "all",
+	onTagSelect,
+}) => {
 	return (
 		<div className={styles.container}>
 			<h2 className={styles.title}>Filtros:</h2>

@@ -1,8 +1,8 @@
-// src/components/AlbumModal.tsx
+"use client";
 
 import { FC } from "react";
 import { AlbumType } from "@/types";
-import styles from "@/styles/components/AlbumModal.module.scss";
+import styles from "./AlbumModal.module.scss";
 import Image from "next/image";
 
 import { Nunito_Sans } from "next/font/google";

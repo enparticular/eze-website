@@ -1,3 +1,5 @@
+@import "@styles/_variables";
+
 .albumGrid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -15,11 +17,4 @@
 		grid-template-columns: 1fr;
 		padding: 1rem;
 	}
-}
-
-.loadingState,
-.noResults {
-	grid-column: 1 / -1;
-	text-align: center;
-	padding: 2rem;
 }

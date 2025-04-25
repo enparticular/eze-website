@@ -1,3 +1,5 @@
+@import "@styles/_variables";
+
 .backdrop {
 	position: fixed;
 	top: 0;
@@ -153,15 +155,15 @@
 	background-color: #03afa2;
 }
 
-.tag-mastering {
+.tag-master {
 	background-color: #e0bd19;
 }
 
-.tag-production {
+.tag-prod {
 	background-color: #cf441e;
 }
 
-.tag-mixing {
+.tag-mix {
 	background-color: #155ec2;
 }
 

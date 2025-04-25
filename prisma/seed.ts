@@ -12,10 +12,10 @@ async function main() {
 
 	// Create tags
 	const musicTag = await prisma.tag.create({ data: { name: "music" } });
-	const mixingTag = await prisma.tag.create({ data: { name: "mixing" } });
-	const masteringTag = await prisma.tag.create({ data: { name: "mastering" } });
+	const mixingTag = await prisma.tag.create({ data: { name: "mix" } });
+	const masteringTag = await prisma.tag.create({ data: { name: "master" } });
 	const productionTag = await prisma.tag.create({
-		data: { name: "production" },
+		data: { name: "prod" },
 	});
 
 	// Create albums with tags and links
