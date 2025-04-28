@@ -1,7 +1,7 @@
 @import "@styles/_variables";
 
 .container {
-	margin-bottom: 2rem;
+	margin: 2rem 0 0;
 	text-align: center;
 }
 
@@ -10,6 +10,10 @@
 	text-transform: uppercase;
 	color: #fff;
 	margin: 0 0 1rem;
+	:global(body.dark-mode) & {
+		text-transform: capitalize;
+		-webkit-font-smoothing: antialiased;
+	}
 }
 
 .tagList {
@@ -45,6 +49,23 @@
 		&:hover {
 			background-color: #fff;
 			color: #326061;
+		}
+	}
+	:global(body.dark-mode) & {
+		background-color: #aa0000;
+		border: none;
+		&:hover {
+			background-color: #fff;
+			color: #aa0000;
+		}
+		&.active {
+			background-color: white;
+			color: #aa0000;
+
+			&:hover {
+				background-color: #fff;
+				color: #aa0000;
+			}
 		}
 	}
 }

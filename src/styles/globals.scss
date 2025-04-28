@@ -38,13 +38,22 @@ body {
 
 .dark-mode {
 	// Dark theme colors
-	--background: #111827;
-	--card-bg: #1f2937;
-	--text-primary: #f9fafb;
-	--text-secondary: #e5e7eb;
-	--text-tertiary: #d1d5db;
-	--border: #374151;
+	--background-color: #050505;
+	--card-bg: #222;
+	--text-primary: #999;
+	--text-secondary: #bbb;
+	--text-tertiary: #bb0000;
+	--border: #5a5353;
 	--modal-backdrop: rgba(0, 0, 0, 0.7);
+}
+body.dark-mode {
+	background-color: #000;
+	font-family: var(--font-unifraktur);
+	text-transform: inherit !important;
+	background: url("/images/dark-bg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
 }
 .loading-state {
 	display: flex;

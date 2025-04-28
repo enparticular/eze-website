@@ -5,12 +5,6 @@ import { AlbumType } from "@/types";
 import styles from "./AlbumModal.module.scss";
 import Image from "next/image";
 
-import { Nunito_Sans } from "next/font/google";
-const nunitoSans = Nunito_Sans({
-	subsets: ["latin"],
-	display: "swap",
-});
-
 interface AlbumModalProps {
 	album: AlbumType;
 	onClose: () => void;
@@ -95,12 +89,12 @@ const AlbumModal: FC<AlbumModalProps> = ({ album, onClose }) => {
 
 					<div className={styles.details}>
 						<section className={styles.section}>
+							<p className={styles.subtitle}>{album.artist}</p>
 							<h2 className={styles.title}>
 								{album.name} ({album.year})
 							</h2>
-							<p className={styles.subtitle}>{album.artist}</p>
 							<div
-								className={`${styles.description} ${nunitoSans.className}`}
+								className={`${styles.description}`}
 								dangerouslySetInnerHTML={{ __html: album.description }}
 							/>
 						</section>

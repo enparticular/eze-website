@@ -1,14 +1,19 @@
 import { Suspense } from "react";
 import prisma from "@/lib/prisma";
 import HomeContent from "@/components/HomeContent/HomeContent";
+import { generateAlbumSlug } from "@/utils/slugs";
+import { AlbumType, TagFilterType } from "@/types";
 
 export const metadata = {
 	title: "Ezequiel Rivero",
 	description: "Lista de discos y trabajos de Ezequiel Rivero",
 };
 
-export default async function HomePage() {
-	console.warn("--- HomePage Render Start ---");
+interface PageProps {
+	searchParams: { album?: string };
+}
+
+export default async function HomePage({ searchParams }: PageProps) {
 	const [albums, tags] = await Promise.all([
 		prisma.album.findMany({
 			include: {
@@ -22,23 +27,39 @@ export default async function HomePage() {
 		prisma.tag.findMany(),
 	]);
 
-	const formattedAlbums = albums.map((album) => ({
+	const formattedAlbums: AlbumType[] = albums.map((album) => ({
 		...album,
 		createdAt: album.createdAt.toISOString(),
 		updatedAt: album.updatedAt.toISOString(),
 	}));
 
-	const formattedTags = ["all", ...tags.map((tag) => tag.name)];
+	// Find selected album if album param exists
+	const selectedAlbum = searchParams.album
+		? formattedAlbums.find((album) => {
+				const slug = generateAlbumSlug(album.year, album.name);
+				return slug === searchParams.album;
+		  })
+		: null;
 
-	console.log("Tags from DB:", tags);
-	console.log("Formatted Tags:", formattedTags);
+	const formattedTags: TagFilterType[] = [
+		"all",
+		...tags.map((tag) => tag.name),
+	];
+
+	// Serialize the data once for all components
+	const serializedData = {
+		albums: formattedAlbums,
+		selectedAlbum: selectedAlbum,
+		tags: formattedTags,
+	};
 
 	return (
 		<main>
 			<Suspense fallback={<div>Loading...</div>}>
 				<HomeContent
-					initialAlbums={JSON.parse(JSON.stringify(formattedAlbums))}
-					allTags={formattedTags}
+					initialAlbums={serializedData.albums}
+					allTags={serializedData.tags}
+					initialSelectedAlbum={serializedData.selectedAlbum}
 				/>
 			</Suspense>
 		</main>
