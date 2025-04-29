@@ -34,10 +34,35 @@ body {
 	-webkit-font-smoothing: none;
 	color: var(--text-primary);
 	background-color: #316264;
-	background: url("/images/light-bg.gif");
+	background-image: url("/images/light-bg.gif");
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		background: linear-gradient(
+			45deg,
+			rgba(255, 255, 255, 0.1) 25%,
+			transparent 25%,
+			transparent 50%,
+			rgba(255, 255, 255, 0.1) 50%,
+			rgba(255, 255, 255, 0.1) 75%,
+			transparent 75%,
+			transparent 75%
+		);
+		background-size: 52px 84px;
+		animation: moveShader 2s linear infinite;
+		z-index: 1;
+		pointer-events: none;
+		opacity: 0.5; // Added for better visibility
+	}
 }
 
 .dark-mode {
@@ -83,5 +108,14 @@ body.dark-mode {
 @keyframes spinner {
 	to {
 		transform: rotate(360deg);
+	}
+}
+
+@keyframes moveShader {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 30px 30px;
 	}
 }
