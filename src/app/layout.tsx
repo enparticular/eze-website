@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ThemeProvider from "@/components/ThemeProvider";
+import { themeScript } from "@/lib/theme-script";
 import Header from "@/components/Header";
 import "@/styles/globals.scss";
 
@@ -31,6 +32,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
+			<head>
+				<script dangerouslySetInnerHTML={{ __html: themeScript }} />
+			</head>
 			<body className={`${nunitoSans.variable} ${unifraktur.variable}`}>
 				<ThemeProvider>
 					<Header />

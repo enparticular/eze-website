@@ -125,11 +125,12 @@
 
 .link {
 	display: inline-block;
-	padding: 0.5rem 1rem;
+	padding: 8px 9px 5px;
+	width: 100%;
 	background-color: #222;
 	color: white;
 	text-decoration: none;
-	border-radius: 9999px;
+	border-radius: 8px;
 	font-size: 16px;
 	text-transform: uppercase;
 	transition: background-color var(--transition-speed) ease;
@@ -149,6 +150,7 @@
 
 .tag {
 	font-size: 16px;
+	cursor: default;
 	text-transform: uppercase;
 	padding: 8px 11px 4px;
 	border-radius: 7px;
@@ -173,8 +175,9 @@
 }
 
 .description {
+	margin-top: 1rem;
 	color: var(--text-secondary);
-	--font-family: var(--font-nunito);
+	font-family: var(--font-nunito);
 	-webkit-font-smoothing: auto;
 	p {
 		margin-top: 0;

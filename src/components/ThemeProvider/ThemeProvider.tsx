@@ -24,19 +24,22 @@ export function useTheme() {
 }
 
 export default function ThemeProvider({ children }: { children: ReactNode }) {
-	const [isDarkMode, setIsDarkMode] = useState(false);
+	const [isDarkMode, setIsDarkMode] = useState(() => {
+		// Initialize state with a function to avoid running on server
+		if (typeof window !== "undefined") {
+			return (
+				localStorage.getItem("theme") === "dark" ||
+				!localStorage.getItem("theme")
+			);
+		}
+		return false;
+	});
 
 	useEffect(() => {
 		const isDark =
 			localStorage.getItem("theme") === "dark" ||
 			!localStorage.getItem("theme");
-
 		setIsDarkMode(isDark);
-		if (isDark) {
-			document.body.classList.add("dark-mode");
-		} else {
-			document.body.classList.remove("dark-mode");
-		}
 	}, []);
 
 	const toggleTheme = () => {
