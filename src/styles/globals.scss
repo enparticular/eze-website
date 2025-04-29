@@ -34,6 +34,10 @@ body {
 	-webkit-font-smoothing: none;
 	color: var(--text-primary);
 	background-color: #316264;
+	background: url("/images/light-bg.gif");
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 }
 
 .dark-mode {
