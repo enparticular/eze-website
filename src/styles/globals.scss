@@ -63,6 +63,29 @@ body {
 		pointer-events: none;
 		opacity: 0.5; // Added for better visibility
 	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		background: linear-gradient(
+			-90deg,
+			rgba(255, 255, 255, 0.05) 15%,
+			transparent 15%,
+			transparent 35%,
+			rgba(255, 255, 255, 0.05) 35%,
+			rgba(255, 255, 255, 0.05) 65%,
+			transparent 65%
+		);
+		background-size: 30px 30px;
+		animation: moveShaderReverse 3s linear infinite;
+		z-index: 1;
+		pointer-events: none;
+		opacity: 0.8;
+	}
 }
 
 .dark-mode {
@@ -117,5 +140,15 @@ body.dark-mode {
 	}
 	100% {
 		background-position: 30px 30px;
+	}
+}
+
+// Add this new animation
+@keyframes moveShaderReverse {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: -30px -30px;
 	}
 }

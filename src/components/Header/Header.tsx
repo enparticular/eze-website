@@ -11,6 +11,11 @@ export default function HeaderComponent() {
 			<div className={styles.headerContent}>
 				<div className={styles.logo}>
 					<h1 className={styles.logoText}>Ezequiel Rivero</h1>
+					<p>
+						<a className={styles.email} href="mailto:ezequiel.rivero@gmail.com">
+							ezequiel.rivero@gmail.com
+						</a>
+					</p>
 				</div>
 
 				<div className={styles.themeToggleWrapper}>

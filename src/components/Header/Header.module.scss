@@ -41,6 +41,13 @@
 	color: var(--text-primary);
 	margin: 0;
 }
+.email {
+	color: var(--text-primary);
+	cursor: pointer;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-left: 12px;
+}
 
 .themeToggleWrapper {
 	display: flex;

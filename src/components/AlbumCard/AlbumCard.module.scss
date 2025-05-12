@@ -12,20 +12,30 @@
 	z-index: 2;
 	animation: floatingCard 10s ease-in-out infinite;
 	&:hover {
-		transform: translateY(-5px);
+		animation-play-state: paused;
+		transform: translateY(-8px) !important;
+		box-shadow: 6px 11px 4px 0px rgba(0, 0, 0, 0.2);
+		z-index: 3;
 	}
 	:global(body.dark-mode) & {
 		border-radius: 5px;
 	}
-	&:nth-child(2n) {
-		animation-delay: 1s;
-	}
-	&:nth-child(3n) {
-		animation-delay: 2s;
-	}
-	&:nth-child(4n) {
-		animation-delay: 3s;
-	}
+}
+
+.item1 {
+	animation-delay: 1s;
+}
+
+.item2 {
+	animation-delay: 2s;
+}
+
+.item3 {
+	animation-delay: 3s;
+}
+
+.item4 {
+	animation-delay: 4s;
 }
 
 .imageContainer {

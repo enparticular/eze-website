@@ -8,11 +8,19 @@ import Image from "next/image";
 interface AlbumCardProps {
 	album: AlbumType;
 	onClick: (album: AlbumType) => void;
+	className?: string;
 }
 
-export const AlbumCard: FC<AlbumCardProps> = ({ album, onClick }) => {
+export const AlbumCard: FC<AlbumCardProps> = ({
+	album,
+	onClick,
+	className,
+}) => {
 	return (
-		<div className={styles.card} onClick={() => onClick(album)}>
+		<div
+			className={`${styles.card} ${className ? className : ""}`}
+			onClick={() => onClick(album)}
+		>
 			<div className={styles.imageContainer}>
 				<Image
 					src={album.coverArt}

@@ -36,8 +36,20 @@ export const AlbumGrid = ({
 
 	return (
 		<div className={styles.albumGrid}>
-			{initialAlbums.map((album) => (
-				<AlbumCard key={album.id} album={album} onClick={handleAlbumClick} />
+			{initialAlbums.map((album, index) => (
+				<div
+					key={album.id}
+					className={styles.gridItemSlide}
+					style={{ animationDelay: `${index * 0.05}s` }}
+				>
+					<AlbumCard
+						key={album.id}
+						album={album}
+						onClick={handleAlbumClick}
+						className={styles[`item${(index % 4) + 1}`]}
+						
+					/>
+				</div>
 			))}
 
 			{selectedAlbum && (
