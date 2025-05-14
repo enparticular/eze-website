@@ -57,7 +57,8 @@
 }
 
 .title {
-	font-size: 26px;
+	font-size: 37px;
+	line-height: 26px;
 	text-align: center;
 	margin: 0;
 	letter-spacing: 0.05rem;
@@ -65,7 +66,6 @@
 	color: var(--text-primary);
 	:global(body.dark-mode) & {
 		text-transform: none;
-		-webkit-font-smoothing: antialiased;
 	}
 }
 
@@ -73,10 +73,11 @@
 	text-align: center;
 	text-transform: uppercase;
 	color: var(--text-secondary);
-	font-size: 22px;
+
+	font-size: 36px;
+	line-height: 22px;
 	:global(body.dark-mode) & {
 		text-transform: none;
-		-webkit-font-smoothing: antialiased;
 	}
 	p {
 		margin: 0.5rem 0;
@@ -92,14 +93,15 @@
 }
 
 .tag {
-	font-size: 16px;
+	font-size: 21px;
+	font-weight: 400;
 	text-transform: uppercase;
-	padding: 8px 11px 4px;
+	padding: 1px 6px 1px;
 	border-radius: 4px;
 	background-color: #e5f6fd;
 	color: #fff;
 	:global(body.dark-mode) & {
-		font-family: "m6x11", "Courier New", Courier, monospace;
+		font-family: var(--font-micro5), "Courier New", Courier, monospace;
 	}
 }
 

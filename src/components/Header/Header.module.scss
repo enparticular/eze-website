@@ -64,7 +64,7 @@
 	transition: opacity 0.2s ease;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-family: "m6x11", "Courier New", Courier, monospace;
+	font-family: var(--font-micro5), "Courier New", Courier, monospace;
 	&.active {
 		opacity: 1;
 		font-weight: 600;

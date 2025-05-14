@@ -4,7 +4,14 @@ import { themeScript } from "@/lib/theme-script";
 import Header from "@/components/Header";
 import "@/styles/globals.scss";
 
-import { Nunito_Sans, UnifrakturMaguntia } from "next/font/google";
+import { Nunito_Sans, UnifrakturMaguntia, Micro_5 } from "next/font/google";
+
+const micro5 = Micro_5({
+	weight: "400",
+	subsets: ["latin"],
+	display: "swap",
+	variable: "--font-micro5",
+});
 
 const nunitoSans = Nunito_Sans({
 	subsets: ["latin"],
@@ -35,7 +42,9 @@ export default function RootLayout({
 			<head>
 				<script dangerouslySetInnerHTML={{ __html: themeScript }} />
 			</head>
-			<body className={`${nunitoSans.variable} ${unifraktur.variable}`}>
+			<body
+				className={`${nunitoSans.variable} ${unifraktur.variable} ${micro5.variable}`}
+			>
 				<ThemeProvider>
 					<Header />
 					<main>{children}</main>

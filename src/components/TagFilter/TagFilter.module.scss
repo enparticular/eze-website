@@ -12,7 +12,6 @@
 	margin: 0 0 1rem;
 	:global(body.dark-mode) & {
 		text-transform: capitalize;
-		-webkit-font-smoothing: antialiased;
 	}
 }
 
@@ -24,12 +23,12 @@
 }
 
 .tag {
-	font-family: "m6x11", "Courier New", Courier, monospace;
-	font-size: 16px;
+	font-family: var(--font-micro5), "Courier New", Courier, monospace;
+
 	padding: 5px 9px 2px;
 	text-transform: uppercase;
 	color: #fff;
-	font-size: 16px;
+	font-size: 23px;
 	font-weight: 500;
 	border: none;
 	cursor: pointer;
