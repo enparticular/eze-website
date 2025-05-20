@@ -12,6 +12,7 @@
 	justify-content: center;
 	z-index: 50;
 	padding: 2rem;
+	overflow: hidden;
 }
 
 .modal {
@@ -21,19 +22,25 @@
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 	width: 100%;
 	max-width: 990px;
-	min-height: 60vh; // Fixed height instead of max-height
+	max-height: 90vh; // Fixed height instead of max-height
 	display: flex;
 	flex-direction: column;
-	animation: floatingCard 10s ease-in-out infinite;
+	overflow: hidden; // Hide overflow from main container
+	animation: none !important;
+	@media screen and (min-width: $breakpoint-md) {
+		max-height: 80vh;
+		animation: floatingCard 10s ease-in-out infinite;
+	}
 }
 
 .content {
 	display: flex;
 	flex-direction: column;
-	padding: 1.5rem;
+	padding: 1rem;
 	overflow-y: auto;
 	height: 100%; // Take full height
 	@media (min-width: $breakpoint-md) {
+		padding: 1.5rem;
 		flex-direction: row;
 		gap: 2rem;
 	}
@@ -48,23 +55,31 @@
 }
 
 .title {
-	font-size: 40px;
-	line-height: 30px;
+	font-size: 35px;
+	line-height: 25px;
 	letter-spacing: 0.05rem;
 	text-transform: uppercase;
 	color: var(--text-primary);
 	margin: 0;
 	max-width: 95%;
+	@media (min-width: $breakpoint-md) {
+		font-size: 40px;
+		line-height: 30px;
+	}
 }
 
 .subtitle {
-	font-size: 30px;
+	font-size: 25px;
 	text-transform: uppercase;
 	color: var(--text-secondary);
 	margin: 0.5rem 0 0.5rem;
+	@media (min-width: $breakpoint-md) {
+		font-size: 30px;
+	}
 }
 
 .closeButton {
+	display: none; // hidden for now
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
@@ -83,8 +98,11 @@
 .imageContainer {
 	position: relative;
 	width: 100%;
-	margin-bottom: 0.5rem;
+	order: 2;
+
 	@media (min-width: $breakpoint-md) {
+		margin-bottom: 0.5rem;
+		order: inherit;
 		width: 300px;
 		flex-shrink: 0;
 		margin-bottom: 0;
@@ -93,22 +111,54 @@
 }
 
 .image {
-	object-fit: cover;
-	border-radius: 0.25rem;
-	margin-bottom: 1rem;
+	display: none;
+
+	@media (min-width: $breakpoint-md) {
+		display: flex;
+		object-fit: cover;
+		border-radius: 0.25rem;
+		margin-bottom: 1rem;
+	}
 }
 
 .details {
 	flex: 1;
 	overflow-y: auto; // Enable scrolling for long descriptions
 	min-height: 0; // Important for nested flex containers
+	order: 1;
+	padding-right: 1rem;
+
+	// Custom scrollbar styling
+	&::-webkit-scrollbar {
+		width: 10px; // Width of the scrollbar
+	}
+
+	&::-webkit-scrollbar-track {
+		background: transparent; // Background of the track
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #bbb; // Color of the scrollbar thumb
+		border-radius: 1px; // Rounded corners
+	}
+
+	// Firefox scrollbar styling
+	scrollbar-width: thin;
+	scrollbar-color: #bbb transparent;
+
+	@media (min-width: $breakpoint-md) {
+		order: inherit;
+	}
 }
 
 .section {
-	margin-bottom: 1.5rem;
+	margin-bottom: 0.5rem;
+	@media (min-width: $breakpoint-md) {
+		margin-bottom: 1.5rem;
 
-	&:last-child {
-		margin-bottom: 0;
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -136,7 +186,7 @@
 	font-size: 12px;
 	font-weight: bold;
 	text-transform: uppercase;
-	font-family: var(--font-nunito);
+	font-family: var(--font-courier);
 	transition: background-color var(--transition-speed) ease;
 
 	&:hover {
@@ -181,14 +231,18 @@
 .description {
 	margin-top: 1rem;
 	color: var(--text-secondary);
-	font-family: var(--font-nunito);
+	font-family: var(--font-courier);
 	-webkit-font-smoothing: auto;
+	font-size: 0.85rem;
 	p {
 		margin-top: 0;
 		margin-bottom: 1rem;
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+		@media (min-width: $breakpoint-md) {
+			font-size: 1rem;
 		}
 	}
 }

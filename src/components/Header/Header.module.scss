@@ -36,10 +36,13 @@
 }
 
 .logoText {
-	font-size: 1.5rem;
+	font-size: 30px;
 	font-weight: 700;
 	color: var(--text-primary);
 	margin: 0;
+	@media (min-width: $breakpoint-md) {
+		font-size: 45px;
+	}
 }
 .email {
 	color: var(--text-primary);
@@ -47,6 +50,15 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	margin-left: 12px;
+	:global(body.dark-mode) & {
+		font-family: var(--font-courier);
+		text-transform: uppercase;
+		font-size: 10px;
+		font-weight: bold;
+		&:hover {
+			color: #aa0000;
+		}
+	}
 }
 
 .themeToggleWrapper {
@@ -58,13 +70,19 @@
 .themeToggleButton {
 	background: none;
 	border: none;
-	padding: 4px 8px;
+	font-size: 18px;
+	padding: 2px 4px;
+
 	cursor: pointer;
-	font-size: 16px;
+
 	transition: opacity 0.2s ease;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-family: var(--font-micro5), "Courier New", Courier, monospace;
+	@media (min-width: $breakpoint-md) {
+		padding: 4px 8px;
+		font-size: 23px;
+	}
 	&.active {
 		opacity: 1;
 		font-weight: 600;

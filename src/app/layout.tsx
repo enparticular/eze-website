@@ -4,7 +4,7 @@ import { themeScript } from "@/lib/theme-script";
 import Header from "@/components/Header";
 import "@/styles/globals.scss";
 
-import { Nunito_Sans, UnifrakturMaguntia, Micro_5 } from "next/font/google";
+import { Courier_Prime, UnifrakturMaguntia, Micro_5 } from "next/font/google";
 
 const micro5 = Micro_5({
 	weight: "400",
@@ -13,10 +13,11 @@ const micro5 = Micro_5({
 	variable: "--font-micro5",
 });
 
-const nunitoSans = Nunito_Sans({
+const courierPrime = Courier_Prime({
+	weight: "400",
 	subsets: ["latin"],
 	display: "swap",
-	variable: "--font-nunito",
+	variable: "--font-courier",
 });
 
 const unifraktur = UnifrakturMaguntia({
@@ -43,7 +44,7 @@ export default function RootLayout({
 				<script dangerouslySetInnerHTML={{ __html: themeScript }} />
 			</head>
 			<body
-				className={`${nunitoSans.variable} ${unifraktur.variable} ${micro5.variable}`}
+				className={`${courierPrime.variable} ${unifraktur.variable} ${micro5.variable}`}
 			>
 				<ThemeProvider>
 					<Header />
