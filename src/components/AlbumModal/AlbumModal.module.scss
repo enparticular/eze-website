@@ -62,6 +62,9 @@
 	color: var(--text-primary);
 	margin: 0;
 	max-width: 95%;
+	:global(body.dark-mode) & {
+		text-transform: none;
+	}
 	@media (min-width: $breakpoint-md) {
 		font-size: 40px;
 		line-height: 30px;
@@ -73,6 +76,9 @@
 	text-transform: uppercase;
 	color: var(--text-secondary);
 	margin: 0.5rem 0 0.5rem;
+	:global(body.dark-mode) & {
+		text-transform: none;
+	}
 	@media (min-width: $breakpoint-md) {
 		font-size: 30px;
 	}
@@ -167,6 +173,9 @@
 	text-transform: uppercase;
 	color: var(--text-primary);
 	margin: 0 0 0.75rem;
+	:global(body.dark-mode) & {
+		text-transform: none;
+	}
 }
 
 .links {
@@ -188,9 +197,14 @@
 	text-transform: uppercase;
 	font-family: var(--font-courier);
 	transition: background-color var(--transition-speed) ease;
-
 	&:hover {
 		background-color: var(--primary-dark);
+	}
+	:global(body.dark-mode) & {
+		background-color: #000;
+		&:hover {
+			background-color: #111;
+		}
 	}
 }
 
@@ -210,6 +224,9 @@
 	border-radius: 7px;
 	background-color: #e5f6fd;
 	color: #fff;
+	:global(body.dark-mode) & {
+		font-family: var(--font-micro5), "Courier New", Courier, monospace;
+	}
 }
 
 .tag-music {
@@ -226,6 +243,15 @@
 
 .tag-mix {
 	background-color: #155ec2;
+}
+
+.tag-mix,
+.tag-prod,
+.tag-master,
+.tag-music {
+	:global(body.dark-mode) & {
+		background-color: #aa0000;
+	}
 }
 
 .description {

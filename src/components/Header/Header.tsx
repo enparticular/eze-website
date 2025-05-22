@@ -4,7 +4,7 @@ import { useTheme } from "@/components/ThemeProvider/ThemeProvider";
 import styles from "./Header.module.scss";
 
 export default function HeaderComponent() {
-	const { isDarkMode, toggleTheme } = useTheme();
+	const { isDarkMode, setTheme } = useTheme();
 
 	return (
 		<header className={styles.header}>
@@ -18,7 +18,7 @@ export default function HeaderComponent() {
 						className={`${styles.themeToggleButton} ${
 							!isDarkMode ? styles.active : styles.dimmed
 						}`}
-						onClick={toggleTheme}
+						onClick={() => setTheme(false)}
 						aria-label="Light mode"
 					>
 						Light Mode
@@ -28,7 +28,7 @@ export default function HeaderComponent() {
 						className={`${styles.themeToggleButton} ${
 							isDarkMode ? styles.active : styles.dimmed
 						}`}
-						onClick={toggleTheme}
+						onClick={() => setTheme(true)}
 						aria-label="Dark mode"
 					>
 						Dark Mode

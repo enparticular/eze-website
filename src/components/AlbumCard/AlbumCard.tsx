@@ -25,7 +25,7 @@ export const AlbumCard: FC<AlbumCardProps> = ({
 				<Image
 					src={album.coverArt}
 					alt={`${album.name} cover`}
-					fill="true"
+					fill
 					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 					className={styles.image}
 				/>

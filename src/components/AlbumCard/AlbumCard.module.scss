@@ -49,6 +49,8 @@
 	color: var(--text-primary);
 	:global(body.dark-mode) & {
 		text-transform: none;
+		font-size: 33px;
+		line-height: 32px;
 	}
 }
 

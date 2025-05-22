@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ThemeProvider from "@/components/ThemeProvider";
 import { themeScript } from "@/lib/theme-script";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import "@/styles/globals.scss";
 
 import { Courier_Prime, UnifrakturMaguntia, Micro_5 } from "next/font/google";
@@ -49,6 +50,7 @@ export default function RootLayout({
 				<ThemeProvider>
 					<Header />
 					<main>{children}</main>
+					<Footer />
 				</ThemeProvider>
 			</body>
 		</html>
