@@ -2,18 +2,19 @@ import { Suspense } from "react";
 import prisma from "@/lib/prisma";
 import HomeContent from "@/components/HomeContent/HomeContent";
 import { generateAlbumSlug } from "@/utils/slugs";
-import { AlbumType, TagFilterType } from "@/types";
+import { TagFilterType, AlbumType } from "@/types";
 
 export const metadata = {
 	title: "Ezequiel Rivero",
 	description: "Lista de discos y trabajos de Ezequiel Rivero",
 };
 
-interface PageProps {
-	searchParams: { album?: string };
-}
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type Props = any;
 
-export default async function HomePage({ searchParams }: PageProps) {
+export default async function Page(props: Props) {
+	const searchParams = props?.searchParams || {};
+
 	const [albums, tags] = await Promise.all([
 		prisma.album.findMany({
 			include: {
@@ -27,17 +28,21 @@ export default async function HomePage({ searchParams }: PageProps) {
 		prisma.tag.findMany(),
 	]);
 
-	const formattedAlbums: AlbumType[] = albums.map((album) => ({
+	const formattedAlbums = albums.map((album) => ({
 		...album,
 		createdAt: album.createdAt.toISOString(),
 		updatedAt: album.updatedAt.toISOString(),
-	}));
+	})) as unknown as AlbumType[];
+
+	// Updated to handle searchParams as a record of string or string[]
+	const albumParam =
+		typeof searchParams.album === "string" ? searchParams.album : undefined;
 
 	// Find selected album if album param exists
-	const selectedAlbum = searchParams.album
+	const selectedAlbum = albumParam
 		? formattedAlbums.find((album) => {
 				const slug = generateAlbumSlug(album.year, album.name);
-				return slug === searchParams.album;
+				return slug === albumParam;
 		  })
 		: null;
 

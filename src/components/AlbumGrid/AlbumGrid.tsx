@@ -10,7 +10,7 @@ import { generateAlbumSlug } from "@/utils/slugs";
 
 interface AlbumGridProps {
 	initialAlbums: AlbumType[];
-	initialSelectedAlbum?: AlbumType;
+	initialSelectedAlbum?: AlbumType | null;
 }
 
 export const AlbumGrid = ({
@@ -47,7 +47,6 @@ export const AlbumGrid = ({
 						album={album}
 						onClick={handleAlbumClick}
 						className={styles[`item${(index % 4) + 1}`]}
-						
 					/>
 				</div>
 			))}

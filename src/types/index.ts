@@ -19,8 +19,8 @@ export interface AlbumType {
 	description: string;
 	links: LinkType[];
 	tags: Tag[];
-	createdAt: Date;
-	updatedAt: Date;
+	createdAt: string;
+	updatedAt: string;
 }
 
 // For tag filtering functionality
