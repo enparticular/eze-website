@@ -1,0 +1,708 @@
+[
+  {
+    "id": 14,
+    "name": "Pocos nombres para demasiadas personas",
+    "year": 2006,
+    "artist": "Amelia",
+    "coverArt": "/images/2006-amelia.jpg",
+    "description": "<p>La historia del primer disco que hice es bastante particular. Tenía una guitarra, un bajo, la computadora, y quería hacer muchas canciones, pero me sentía totalmente incapaz de cantar. Lentamente fui haciendo muchas canciones, instrumentales pero con el espacio para , y se las fui mostrando de a poco a los músicos y cantantes que conocía. La respuesta fue positiva y de a poco fueron aportando sus voces y sus letras a cada canciones. El resultado es una especie de compilado de famosos cantantes del indie uruguayo, como Pedro Dalton (Buenos Muchachos), Adrián Biniez (Reverb, Genuflexos), Tüssi Dematteis (La Hermana Menor), Pancho (Pompas, Danteinferno) y Adriana Navarro (que fue durante una época la cantante ‘oficial’ de Amelia y que funcionó como el ‘pegamento’ de todo el disco).</p>  <p>Durante el proceso de composición del disco, el proyecto también se convirtió también en una banda real, donde fueron participando sus integrantes (además de Adriana).</p>  <p>Le tengo mucho cariño y pese a su grabación mega trucha y sus baterías programadas con samples tirados por Internet y mezclada con los peores monitores de la historia, creo que suena muy simpático.</p>",
+    "createdAt": "2025-04-23T20:57:53.823Z",
+    "updatedAt": "2025-04-24T01:35:16.358Z",
+    "links": [
+      {
+        "id": 26,
+        "name": "Escuchar en Spotify",
+        "href": "https://open.spotify.com/album/2Sb5xv2IuP0juFNlJkPC7O?si=A0zwgB94QpW8LgzYfrh9XQ",
+        "albumId": 14
+      },
+      {
+        "id": 27,
+        "name": "Escuchar en Bandcamp",
+        "href": "https://amelia-uy.bandcamp.com/album/pocos-nombres-para-demasiadas-personas",
+        "albumId": 14
+      }
+    ],
+    "tags": [
+      {
+        "id": 17,
+        "name": "music"
+      },
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 19,
+        "name": "master"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Segundo Nombre",
+    "year": 2009,
+    "artist": "Amelia",
+    "coverArt": "/images/2009-segundo-nombre.jpg",
+    "description": "<p>Cuando Adriana Navarro decidi&oacute; irse de la banda nos quedamos en una situaci&oacute;n inc&oacute;moda - ya habiamos armado una banda pero nos hab&iacute;amos quedado sin cantante. Ocurri&oacute; tambi&eacute;n que en el proceso de armar la banda justo reclut&eacute; a dos m&uacute;sicos que curiosamente eran tambi&eacute;n cantautores - <strong>Luis Bellagamba</strong> (guitarra y voz) y <strong>Guzm&aacute;n Risso</strong> (guitarra y voz).&nbsp;</p> <p>Podr&iacute;amos habernos llamado con otro nombre de banda, pero algo de continuidad hab&iacute;a en el proyecto y seguimos siendo Amelia, pero est&aacute; vez en vez de un proyecto idiosincr&aacute;tico de estudio con muchos cantantes, era una especie de proyecto power-pop con 3 cantantes y compositores separados.&nbsp;</p> <p>Grabamos bater&iacute;as y alguna guitarra base y luego el resto en casa. Como en muchos de estos discos de esta &eacute;poca, el <strong>Guitar Rig</strong> fue Rey y sirvi&oacute; para todas las guitarras. Las voces, coros y percusiones fueron grabadas con en ese momento mi &uacute;nico micr&oacute;fono, un <strong>Shure KSM32</strong> que todav&iacute;a cumple muy bien su prop&oacute;sito.&nbsp;</p> <p>Me dan bastante verg&uuml;enza algunas de las letras que escrib&iacute;a en ese momento, y claramente andaba en una larga b&uacute;squeda sobre como ser cantante, pero considero que el disco al final es inesperadamente coherente.</p>",
+    "createdAt": "2025-04-23T20:57:53.826Z",
+    "updatedAt": "2025-04-24T01:56:57.779Z",
+    "links": [
+      {
+        "id": 28,
+        "name": "Escuchar en Spotify",
+        "href": "https://open.spotify.com/album/5yijX4gsrL2i9xRspO8t2G?si=hPo92lArSyi6sOLSfIuoRQ",
+        "albumId": 15
+      },
+      {
+        "id": 29,
+        "name": "Escuchar en Bandcamp",
+        "href": "https://amelia-uy.bandcamp.com/album/segundo-nombre",
+        "albumId": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": 17,
+        "name": "music"
+      },
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 19,
+        "name": "master"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Otro Final",
+    "year": 2010,
+    "artist": "Amelia",
+    "coverArt": "/images/2010-otro-final.jpg",
+    "description": "<p>bla bla .</p>",
+    "createdAt": "2025-04-23T20:57:53.827Z",
+    "updatedAt": "2025-04-23T20:57:53.827Z",
+    "links": [
+      {
+        "id": 30,
+        "name": "Escuchar en Spotify",
+        "href": "https://open.spotify.com/album/3y6OqJhonYOmA7woFA7HKu?si=jLvTP8GtSx-p2drETAil4Q",
+        "albumId": 16
+      },
+      {
+        "id": 31,
+        "name": "Escuchar en Bandcamp",
+        "href": "https://amelia-uy.bandcamp.com/album/otro-final",
+        "albumId": 16
+      }
+    ],
+    "tags": [
+      {
+        "id": 17,
+        "name": "music"
+      },
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 19,
+        "name": "master"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Liu y las Dificultades del Aprendizaje",
+    "year": 2008,
+    "artist": "3Pecados",
+    "coverArt": "/images/2008-liu.jpg",
+    "description": "<p>Me hice amigo de <strong>Pau O&rsquo;Bianchi</strong> de vernoss en varias fechas en distintos tugurios de Montevideo, cuando era un flaquito rar&iacute;simo que tocaba siempre sombrero y mirando de espaldas al p&uacute;blico. En esa &eacute;poca 3Pecados era exclusivamente un d&uacute;o, con Pau tocando la guitarra y cantando y <strong>Pablo Torres</strong> en bater&iacute;a. Recuerdo que grabamos todo el estudio / sala de ensayo de Mauricio &ldquo;El Pollo&rdquo; Figueredo, en ese momento tecladista de La Hermana Menor, con un equipo mio de guitarra y una Samick 335. Sobre eso, nos divertimos muchos, grabando teclados, guitarras extras, coros, ruiditos y mucho m&aacute;s. Mi desconocimiento t&eacute;cnico era galopante (recuerdo al final de la mezcla descubrir que se pod&iacute;an user Noise Gates para sacar el ruido de los micr&oacute;fonos de bombo y redoblante), pero trabajamos igual mucho tiempo y creo que qued&oacute; un disco colorido y con mucha personalidad.&nbsp;</p> <p>Este disco no ten&iacute;a la aspereza total de <a href=\"https://3pecados.bandcamp.com/album/pesadillas-para-ni-os-y-travestis-dada-stas\">su primer disco</a>, ni la prolijidad pop de su &uacute;ltimo disco, pero es una buena bisagra de lo que ser&iacute;a el resto de la obra de Pau a futuro.&nbsp;</p>",
+    "createdAt": "2025-04-23T20:57:53.828Z",
+    "updatedAt": "2025-04-24T01:50:13.609Z",
+    "links": [
+      {
+        "id": 32,
+        "name": "Escuchar en Bandcamp",
+        "href": "https://3pecados.bandcamp.com/album/liu-y-las-dificultades-graves-en-el-aprendizaje",
+        "albumId": 17
+      },
+      {
+        "id": 44,
+        "name": "Anotaciones sobre grabación",
+        "href": "https://www.tumblr.com/estagrabando/12203515255/grabaciones-liu-y-las-dificultades-graves-del?source=share",
+        "albumId": 17
+      }
+    ],
+    "tags": [
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 19,
+        "name": "master"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Condenado al Siglo XX",
+    "year": 2024,
+    "artist": "Antolin",
+    "coverArt": "/images/2024-condenado.jpg",
+    "description": "<p>Estuve d&eacute;cadas queriendo producir a Antol&iacute;n. Fue de las primeras personas que contact&eacute; apenas me mud&eacute; a Argentina. Nos juntamos, me mostr&oacute; sus canciones&hellip; pero no funcion&oacute;. Yo estaba muy en plan <em>superartista-productor-multiloco</em>, y quer&iacute;a agarrar sus temas y deconstruirlos para crear <em>La Mejor Obra Jam&aacute;s Creada</em>. Pero Antol&iacute;n... es Antol&iacute;n. Me llev&oacute; muchos a&ntilde;os entender que &eacute;l se maneja en su propia esfera, con su est&eacute;tica s&uacute;per definida, y que lo mejor es que trabaje siempre dentro de sus propios par&aacute;metros.</p> <p>Pasaron los a&ntilde;os y seguimos en contacto. Durante un tiempo ofrec&iacute; cursos de producci&oacute;n musical, y &eacute;l estuvo como alumno. A las pocas semanas se dio cuenta de que, m&aacute;s que estudiar, prefer&iacute;a pagarme para que le produjera algunas canciones. En paralelo, empec&eacute; a tocar en su banda en vivo &mdash;primero el bajo y despu&eacute;s la guitarra el&eacute;ctrica.</p> <p>Lo primero que hicimos &mdash;curiosamente&mdash; fueron dos covers del mismo artista: una versi&oacute;n de <em>L&iacute;neas</em>, de Los Encargados, y luego <em>Todo</em>, para un disco Tributo a Daniel Melero.</p> <p>Despu&eacute;s empezamos a trabajar en lo que termin&oacute; siendo este disco. Yo ten&iacute;a dos ideas en mente. La primera era que todo lo que arm&aacute;ramos pudiera ser tocado con la banda que ten&iacute;amos en ese momento (bater&iacute;a, bajo, una guitarra el&eacute;ctrica y una ac&uacute;stica). La segunda &mdash;derivada de la primera&mdash; era armar una especie de &ldquo;banda indie falsa&rdquo; con la compu. Iba a programar todas las bater&iacute;as con Addictive Drums, intentando que sonaran lo m&aacute;s parecido posible a un baterista real. Los bajos, guitarras y teclados los grab&eacute; yo. Antol&iacute;n, que se hab&iacute;a mudado a Neuqu&eacute;n, grab&oacute; las voces como demos usando su celular, y m&aacute;s adelante las registramos en serio en el estudio de Manuel Schaller.</p> <p>Algunos bajos los grab&oacute; despu&eacute;s el bajista de la banda en vivo, Patricio Jones, y Andrea Guzm&aacute;n (que fue la baterista de la banda durante un tiempo) tambi&eacute;n colabor&oacute; con algunos coros.</p> <p>Cuando el disco estuvo terminado y Antol&iacute;n defini&oacute; el arte como un homenaje a las primeras aventuras gr&aacute;ficas de los 80, decidimos hacer un videojuego que lo acompa&ntilde;ara. Es una peque&ntilde;a aventura introspectiva y serena, donde uno est&aacute; en un cuarto vac&iacute;o y observa distintas cosas de la casa. Es muy simple y al mismo tiempo, m&aacute;s complicado de lo que parece.</p> <p>Pueden jugarlo ac&aacute;:<a href=\"http://www.condenadoalsigloxx.com\"> www.condenadoalsigloxx.com</a></p>",
+    "createdAt": "2025-04-23T20:57:53.823Z",
+    "updatedAt": "2025-05-19T14:43:00.694Z",
+    "links": [
+      {
+        "id": 35,
+        "name": "Jugar al videojuego",
+        "href": "http://condenadoalsigloxx.com/",
+        "albumId": 18
+      },
+      {
+        "id": 36,
+        "name": "Escuchar en Spotify",
+        "href": "https://open.spotify.com/album/6s8OZfg4qJj5rHO2UTwMyG?si=hBD4gQlrRxa7tWyV550N6Q",
+        "albumId": 18
+      },
+      {
+        "id": 37,
+        "name": "Escuchar en Bandcamp",
+        "href": "https://antolin.bandcamp.com/album/condenado-al-siglo-xx",
+        "albumId": 18
+      }
+    ],
+    "tags": [
+      {
+        "id": 17,
+        "name": "music"
+      },
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Siamesa",
+    "year": 2024,
+    "artist": "Siamesa",
+    "coverArt": "/images/2024-siamesa.jpg",
+    "description": "<p>Veremos</p>",
+    "createdAt": "2025-04-29T16:30:36.113Z",
+    "updatedAt": "2025-04-29T16:29:39.960Z",
+    "links": [
+      {
+        "id": 34,
+        "name": "Escuchar en Bandcamp",
+        "href": "https://siamesa.bandcamp.com/album/siamesa",
+        "albumId": 19
+      },
+      {
+        "id": 38,
+        "name": "Escuchar en Spotify",
+        "href": "https://open.spotify.com/album/4xXTgqtZtEvwhtjyXrv2Ii?si=Etuwu6RnRzWFpdr0so5_vQ",
+        "albumId": 19
+      }
+    ],
+    "tags": [
+      {
+        "id": 17,
+        "name": "music"
+      },
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Canarios",
+    "year": 2010,
+    "artist": "La Hermana Menor",
+    "coverArt": "/images/2010-canarios.jpg",
+    "description": "<p>Recuerdo estar dando tumbos por La Ronda cuando me encuentro con el T&uuml;ssi - con quien nos conoc&iacute;amos de muchas fechas y de trabajar juntos en el primer disco de Amelia y me pregunt&oacute; si conoc&iacute;a a un tecladista para tocar con ellos. Yo estaba bastante borracho y le dije &lsquo;eeeeh puedo tocar yo sin problemas jaja me la re banco tengo mi sintetizador y todo&rsquo;. Me despert&eacute; al otro d&iacute;a arrepentido y pidi&eacute;ndole disculpas, pero la semilla ya estaba plantada y me convert&iacute; en tecladista de La Hermana Menor por los pr&oacute;ximos a&ntilde;os sin ni siquiera saber lo que era una inversi&oacute;n en el teclado.&nbsp;</p> <p>Este es de mis discos favoritos de La Hermana Menor, principalmente porque la idea fue siempre hacer un disco &ldquo;tranquilo&rdquo;, cosa que siempre se acopl&oacute; a mi sensibilidad.&nbsp;</p> <p>En la parte t&eacute;cnica, creo que finalmente todos los teclados del disco fueron puros VSTs en la computadora, usando mi sintetizador como controlador MIDI nom&aacute;s.</p>",
+    "createdAt": "2025-04-29T16:38:08.988Z",
+    "updatedAt": "2025-04-29T16:37:23.484Z",
+    "links": [
+      {
+        "id": 33,
+        "name": "Escuchar en Spotify",
+        "href": "https://open.spotify.com/album/2SCVECgRMA5DyfFBaCPCuZ?si=ic9KCs3uQiGJNDNeh1gnDQ",
+        "albumId": 20
+      }
+    ],
+    "tags": [
+      {
+        "id": 17,
+        "name": "music"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Joven Edad",
+    "year": 2010,
+    "artist": "Carmen Sandiego",
+    "coverArt": "/images/2010-joven-edad.jpg",
+    "description": "<p>Blah</p>",
+    "createdAt": "2025-04-29T17:34:19.718Z",
+    "updatedAt": "2025-04-29T18:01:33.245Z",
+    "links": [
+      {
+        "id": 42,
+        "name": "Anotaciones sobre grabación",
+        "href": "https://www.tumblr.com/estagrabando/29374756351/grabaciones-joven-edad?source=share",
+        "albumId": 21
+      }
+    ],
+    "tags": [
+      {
+        "id": 17,
+        "name": "music"
+      },
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 19,
+        "name": "master"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Ajinomoto",
+    "year": 2012,
+    "artist": "Ari Vinitski",
+    "coverArt": "/images/2012-ajinomoto.jpg",
+    "description": "<p>bla.</p>",
+    "createdAt": "2025-04-29T17:35:25.858Z",
+    "updatedAt": "2025-04-29T17:34:45.135Z",
+    "links": [
+      {
+        "id": 43,
+        "name": "Anotaciones sobre grabación",
+        "href": "https://www.tumblr.com/estagrabando/23589088178/grabaciones-ajinomoto?source=share",
+        "albumId": 22
+      }
+    ],
+    "tags": [
+      {
+        "id": 17,
+        "name": "music"
+      },
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 19,
+        "name": "master"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Ciudad Dormitorio",
+    "year": 2013,
+    "artist": "Carmen Sandiego",
+    "coverArt": "/images/2013-ciudad-dormitorio.jpg",
+    "description": "<p>Ciudad Dormitorio</p>",
+    "createdAt": "2025-04-29T17:37:39.040Z",
+    "updatedAt": "2025-04-29T17:37:07.439Z",
+    "links": [
+      {
+        "id": 39,
+        "name": "Anotaciones sobre grabación",
+        "href": "https://www.tumblr.com/estagrabando/118702929602/grabaciones-ciudad-dormitorio",
+        "albumId": 23
+      }
+    ],
+    "tags": [
+      {
+        "id": 17,
+        "name": "music"
+      },
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "¡Hula Hula!",
+    "year": 2013,
+    "artist": "Maniquies",
+    "coverArt": "/images/2013-hula-hula.jpg",
+    "description": "<p>Hula?</p>",
+    "createdAt": "2025-04-29T17:38:31.334Z",
+    "updatedAt": "2025-04-29T17:46:36.590Z",
+    "links": [
+      {
+        "id": 41,
+        "name": "Anotaciones sobre grabación",
+        "href": "https://www.tumblr.com/estagrabando/49438699946/grabaciones-hula-hula?source=share",
+        "albumId": 24
+      }
+    ],
+    "tags": [
+      {
+        "id": 17,
+        "name": "music"
+      },
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Todas Las Películas son de Terror",
+    "year": 2013,
+    "artist": "La Hermana Menor",
+    "coverArt": "/images/2013-peliculas-terror.jpg",
+    "description": "<p>Películas</p>",
+    "createdAt": "2025-04-29T17:38:31.334Z",
+    "updatedAt": "2025-04-29T17:37:52.081Z",
+    "links": [
+      {
+        "id": 40,
+        "name": "Anotaciones sobre grabación",
+        "href": "https://www.tumblr.com/estagrabando/70939242168/grabaciones-todas-las-pel%C3%ADculas-son-de-terror?source=share",
+        "albumId": 25
+      }
+    ],
+    "tags": [
+      {
+        "id": 17,
+        "name": "music"
+      },
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 19,
+        "name": "master"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Alaska",
+    "year": 2014,
+    "artist": "Diego Rebella",
+    "coverArt": "/images/2014-alaska.jpg",
+    "description": "<p>Alaska?</p>",
+    "createdAt": "2025-04-29T17:40:21.937Z",
+    "updatedAt": "2025-04-29T17:39:39.496Z",
+    "links": [],
+    "tags": [
+      {
+        "id": 17,
+        "name": "music"
+      },
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Los Incautos no Fallan",
+    "year": 2014,
+    "artist": "Ivan & Los Terribles",
+    "coverArt": "/images/2014-incautos-no-fallan.jpg",
+    "description": "<p>Ivano</p>",
+    "createdAt": "2025-04-29T17:41:39.914Z",
+    "updatedAt": "2025-04-29T17:40:24.705Z",
+    "links": [],
+    "tags": [
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "El Maestro Interior",
+    "year": 2016,
+    "artist": "Ivan & Los Terribles",
+    "coverArt": "/images/2016-maestro-interior.jpg",
+    "description": "<p>Maestro</p>",
+    "createdAt": "2025-04-29T17:42:50.546Z",
+    "updatedAt": "2025-04-29T17:41:54.262Z",
+    "links": [],
+    "tags": [
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Julen y La Gente Sola",
+    "year": 2014,
+    "artist": "Julen y La Gente Sola",
+    "coverArt": "/images/2014-julen.jpg",
+    "description": "<p>Julito</p>",
+    "createdAt": "2025-04-29T17:43:01.752Z",
+    "updatedAt": "2025-04-29T17:44:40.996Z",
+    "links": [],
+    "tags": [
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "¡Hola de nuevo!",
+    "year": 2016,
+    "artist": "Maniquies",
+    "coverArt": "/images/2016-hola-de-nuevo.jpg",
+    "description": "<p>Hola?</p>",
+    "createdAt": "2025-04-29T17:44:40.996Z",
+    "updatedAt": "2025-04-29T17:46:36.590Z",
+    "links": [],
+    "tags": [
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Mapas Anatomicos",
+    "year": 2016,
+    "artist": "Carmen Sandiego",
+    "coverArt": "/images/2016-mapas-anatomicos.jpg",
+    "description": "<p>Mapas</p>",
+    "createdAt": "2025-04-29T17:46:49.574Z",
+    "updatedAt": "2025-04-29T17:47:21.209Z",
+    "links": [],
+    "tags": [
+      {
+        "id": 17,
+        "name": "music"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Hacerse Invisible",
+    "year": 2017,
+    "artist": "Las Futuras Madres",
+    "coverArt": "/images/2017-hacerse-invisible.jpg",
+    "description": "<p>Mamis</p>",
+    "createdAt": "2025-04-29T17:48:30.610Z",
+    "updatedAt": "2025-04-29T17:47:24.668Z",
+    "links": [],
+    "tags": [
+      {
+        "id": 17,
+        "name": "music"
+      },
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Pozo Divino",
+    "year": 2018,
+    "artist": "Las edades",
+    "coverArt": "/images/2018-pozo-divino.jpg",
+    "description": "<p>Pozo</p>",
+    "createdAt": "2025-04-29T17:49:55.145Z",
+    "updatedAt": "2025-04-29T17:49:00.097Z",
+    "links": [],
+    "tags": [
+      {
+        "id": 17,
+        "name": "music"
+      },
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Ruptura",
+    "year": 2019,
+    "artist": "Cuzcos",
+    "coverArt": "/images/2019-ruptura.jpg",
+    "description": "<p>Monga</p>",
+    "createdAt": "2025-04-29T17:51:01.243Z",
+    "updatedAt": "2025-04-29T17:50:05.588Z",
+    "links": [],
+    "tags": [
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 19,
+        "name": "master"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Transandino",
+    "year": 2019,
+    "artist": "Submarino",
+    "coverArt": "/images/2019-transandino.jpg",
+    "description": "<p>Estebaaan</p>",
+    "createdAt": "2025-04-29T17:53:04.410Z",
+    "updatedAt": "2025-04-29T17:51:12.025Z",
+    "links": [],
+    "tags": [
+      {
+        "id": 17,
+        "name": "music"
+      },
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Tierra Aparte",
+    "year": 2020,
+    "artist": "Sil Dagna",
+    "coverArt": "/images/2020-tierra-aparte.jpg",
+    "description": "<p>La Sil</p>",
+    "createdAt": "2025-04-29T18:00:07.298Z",
+    "updatedAt": "2025-04-29T17:58:59.219Z",
+    "links": [],
+    "tags": [
+      {
+        "id": 17,
+        "name": "music"
+      },
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 20,
+        "name": "prod"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "En Vivo",
+    "year": 2020,
+    "artist": "Los Galpones",
+    "coverArt": "/images/2020-en-vivo.jpg",
+    "description": "<p>Otto</p>",
+    "createdAt": "2025-04-29T18:01:05.102Z",
+    "updatedAt": "2025-04-29T18:00:08.798Z",
+    "links": [],
+    "tags": [
+      {
+        "id": 18,
+        "name": "mix"
+      },
+      {
+        "id": 19,
+        "name": "master"
+      }
+    ]
+  }
+]
