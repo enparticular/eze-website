@@ -25,46 +25,34 @@ export function useTheme() {
 }
 
 export default function ThemeProvider({ children }: { children: ReactNode }) {
-	const [isDarkMode, setIsDarkMode] = useState(() => {
-		// Initialize state with a function to avoid running on server
-		if (typeof window !== "undefined") {
-			return (
-				localStorage.getItem("theme") === "dark" ||
-				!localStorage.getItem("theme")
-			);
-		}
-		return false;
-	});
+	// Start with a consistent light mode default
+	const [isDarkMode, setIsDarkMode] = useState(false);
 
-	// Apply theme class on initial render
+	// Flag to track if component has mounted on client
+	const [isClient, setIsClient] = useState(false);
+
+	// Set isClient to true once component mounts on client
 	useEffect(() => {
+		setIsClient(true);
+	}, []);
+
+	// Only apply theme changes after client-side hydration
+	useEffect(() => {
+		if (!isClient) return;
+
 		if (isDarkMode) {
 			document.body.classList.add("dark-mode");
 		} else {
 			document.body.classList.remove("dark-mode");
 		}
-	}, [isDarkMode]);
+	}, [isDarkMode, isClient]);
 
 	const toggleTheme = () => {
-		const newTheme = !isDarkMode;
-		setIsDarkMode(newTheme);
-		localStorage.setItem("theme", newTheme ? "dark" : "light");
-
-		if (newTheme) {
-			document.body.classList.add("dark-mode");
-		} else {
-			document.body.classList.remove("dark-mode");
-		}
+		setIsDarkMode((prevMode) => !prevMode);
 	};
+
 	const setTheme = (isDark: boolean) => {
 		setIsDarkMode(isDark);
-		localStorage.setItem("theme", isDark ? "dark" : "light");
-
-		if (isDark) {
-			document.body.classList.add("dark-mode");
-		} else {
-			document.body.classList.remove("dark-mode");
-		}
 	};
 
 	return (
