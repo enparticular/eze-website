@@ -16,6 +16,10 @@ export default function HomeContent({
 	allTags,
 	initialSelectedAlbum,
 }: HomeContentProps) {
+	// Keep the original albums for filtering
+	const [originalAlbums] = useState<AlbumType[]>(initialAlbums);
+
+	// The filtered albums to display
 	const [albums, setAlbums] = useState<AlbumType[]>(initialAlbums);
 	const [activeTag, setActiveTag] = useState<TagFilterType>("all");
 	const [selectedAlbum, setSelectedAlbum] = useState<AlbumType | null>(
@@ -32,25 +36,19 @@ export default function HomeContent({
 		}
 	}, [albums, selectedAlbum]);
 
-	const handleTagChange = async (tag: TagFilterType) => {
+	const handleTagChange = (tag: TagFilterType) => {
 		console.log("Tag selected:", tag); // Debug selected tag
 		setActiveTag(tag);
 
-		try {
-			const url = `/api/albums${tag !== "all" ? `?tag=${tag}` : ""}`;
-			console.log("Fetching URL:", url); // Debug URL
-
-			const response = await fetch(url);
-			if (!response.ok) {
-				throw new Error("Failed to fetch albums");
-			}
-			const data = await response.json();
-			console.log("Received data:", data); // Debug response data
-			setAlbums(data);
-		} catch (error) {
-			console.error("Error fetching filtered albums:", error);
-			// Optionally reset to initial albums on error
-			setAlbums(initialAlbums);
+		// Filter albums client-side instead of fetching from server
+		if (tag === "all") {
+			setAlbums(originalAlbums);
+		} else {
+			const filtered = originalAlbums.filter((album) =>
+				album.tags.some((albumTag) => albumTag.name === tag)
+			);
+			console.log(`Found ${filtered.length} albums with tag '${tag}'`);
+			setAlbums(filtered);
 		}
 	};
 

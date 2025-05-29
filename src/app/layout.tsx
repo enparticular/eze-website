@@ -29,8 +29,9 @@ const unifraktur = UnifrakturMaguntia({
 });
 
 export const metadata: Metadata = {
-	title: "Ezequiel Rivero",
-	description: "Lista de discos producidos en los últimos 20 años!",
+	title: "Ezequiel Rivero AKA enparticular",
+	description:
+		"Productor musical, compositor. Aquí una lista de los discos que hice en los últimos 20 años.",
 	viewport: "width=device-width, initial-scale=1",
 };
 
