@@ -16,6 +16,7 @@ const micro5 = Micro_5({
 
 const courierPrime = Courier_Prime({
 	weight: ["400", "700"],
+	style: ["normal", "italic"],
 	subsets: ["latin"],
 	display: "swap",
 	variable: "--font-courier",
