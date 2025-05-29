@@ -15,7 +15,7 @@ const micro5 = Micro_5({
 });
 
 const courierPrime = Courier_Prime({
-	weight: "400",
+	weight: ["400", "700"],
 	subsets: ["latin"],
 	display: "swap",
 	variable: "--font-courier",
@@ -31,7 +31,7 @@ const unifraktur = UnifrakturMaguntia({
 export const metadata: Metadata = {
 	title: "Ezequiel Rivero AKA enparticular",
 	description:
-		"Productor musical, compositor. Aquí una lista de los discos que hice en los últimos 20 años.",
+		"Productor musical, compositor . Aquí una lista de los discos que hice en los últimos 20 años.",
 	viewport: "width=device-width, initial-scale=1",
 };
 
