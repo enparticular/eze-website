@@ -1,6 +1,9 @@
 "use client";
 
 import { FC } from "react";
+import Link from "next/link";
+import { generateAlbumSlug } from "@/utils/slugs";
+
 import { AlbumType } from "@/types";
 import styles from "./AlbumCard.module.scss";
 import Image from "next/image";
@@ -21,6 +24,13 @@ export const AlbumCard: FC<AlbumCardProps> = ({
 			className={`${styles.card} ${className ? className : ""}`}
 			onClick={() => onClick(album)}
 		>
+			{" "}
+			<Link
+				href={`/album/${generateAlbumSlug(album.year, album.name)}`}
+				className={styles.seoLink}
+			>
+				View {album.name} details
+			</Link>
 			<div className={styles.imageContainer}>
 				<Image
 					src={album.coverArt}
