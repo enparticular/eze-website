@@ -88,6 +88,15 @@ body {
 	}
 }
 
+button,
+a,
+[role="button"],
+.clickable {
+	cursor: pointer !important;
+	position: relative;
+	z-index: 3; // Higher than your overlay layers
+}
+
 .dark-mode {
 	// Dark theme colors
 	--background-color: #050505;

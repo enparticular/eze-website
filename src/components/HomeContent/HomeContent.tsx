@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { AlbumType, TagFilterType } from "@/types";
 import TagFilter from "@/components/TagFilter";
 import { AlbumGrid } from "@/components/AlbumGrid";
+import Footer from "@/components/Footer";
 
 interface HomeContentProps {
 	initialAlbums: AlbumType[];
@@ -61,6 +62,7 @@ export default function HomeContent({
 			/>
 
 			<AlbumGrid initialAlbums={albums} initialSelectedAlbum={selectedAlbum} />
+			<Footer />
 		</>
 	);
 }

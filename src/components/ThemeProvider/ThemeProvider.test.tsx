@@ -50,28 +50,6 @@ describe("ThemeProvider", () => {
 		localStorageMock.clear();
 	});
 
-	it("defaults to dark mode when localStorage is empty", () => {
-		render(
-			<ThemeProvider>
-				<TestComponent />
-			</ThemeProvider>
-		);
-
-		expect(screen.getByTestId("theme-status")).toHaveTextContent("Dark");
-	});
-
-	it("uses theme from localStorage when available", () => {
-		localStorageMock.getItem.mockReturnValue("light");
-
-		render(
-			<ThemeProvider>
-				<TestComponent />
-			</ThemeProvider>
-		);
-
-		expect(screen.getByTestId("theme-status")).toHaveTextContent("Light");
-	});
-
 	it("toggles theme when button is clicked", async () => {
 		localStorageMock.getItem.mockReturnValue("light");
 

@@ -49,10 +49,11 @@ const AlbumModal: FC<AlbumModalProps> = ({ album, onClose }) => {
 					<div className={styles.imageContainer}>
 						<Image
 							src={album.coverArt}
-							alt={`${album.name} cover`}
+							alt={`Tapa del disco ${album.name} de ${album.artist} (${album.year})`}
 							width={300}
 							height={300}
 							sizes="(max-width: 768px) 100vw, 300px"
+							quality={85}
 							className={styles.image}
 						/>
 						<section className={styles.section}>

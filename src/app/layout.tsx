@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ThemeProvider from "@/components/ThemeProvider";
 import { themeScript } from "@/lib/theme-script";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+
 import "@/styles/globals.scss";
 
 import { Courier_Prime, UnifrakturMaguntia, Micro_5 } from "next/font/google";
@@ -34,6 +34,38 @@ export const metadata: Metadata = {
 	description:
 		"Productor musical, compositor . Aquí una lista de los discos que hice en los últimos 20 años.",
 	viewport: "width=device-width, initial-scale=1",
+	keywords: [
+		"music",
+		"albums",
+		"production",
+		"mixing",
+		"mastering",
+		"indie",
+		"montevideo",
+		"uruguay",
+	],
+	authors: [{ name: "Ezequiel Rivero" }],
+	creator: "Ezequiel Rivero",
+	publisher: "Ezequiel Rivero",
+	formatDetection: {
+		email: false,
+		address: false,
+		telephone: false,
+	},
+	openGraph: {
+		type: "website",
+		locale: "en_US",
+		url: "https://enparticular.net",
+		title: "Ezequiel Rivero - Productor Musical",
+		description:
+			"Productor musical, compositor . Aquí una lista de los discos que hice en los últimos 20 años.",
+		siteName: "Ezequiel Rivero - Productor Musical",
+	},
+	twitter: {
+		title: "Ezequiel Rivero - Productor Musical",
+		description:
+			"Productor musical, compositor . Aquí una lista de los discos que hice en los últimos 20 años.",
+	},
 };
 
 export default function RootLayout({
@@ -52,7 +84,6 @@ export default function RootLayout({
 				<ThemeProvider>
 					<Header />
 					<main>{children}</main>
-					<Footer />
 				</ThemeProvider>
 			</body>
 		</html>
