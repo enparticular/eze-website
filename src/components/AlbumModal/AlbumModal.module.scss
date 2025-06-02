@@ -85,7 +85,6 @@
 }
 
 .closeButton {
-	display: none; // hidden for now
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
@@ -98,6 +97,9 @@
 
 	&:hover {
 		color: var(--text-primary);
+	}
+	@media (min-width: $breakpoint-md) {
+		display: none;
 	}
 }
 
@@ -263,7 +265,19 @@
 	p {
 		margin-top: 0;
 		margin-bottom: 1rem;
+		a {
+			color: #666;
 
+			&:hover {
+				color: #000;
+			}
+			:global(body.dark-mode) & {
+				color: #ddd;
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
 		&:last-child {
 			margin-bottom: 0;
 		}
