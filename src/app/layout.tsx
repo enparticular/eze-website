@@ -31,7 +31,8 @@ const unifraktur = UnifrakturMaguntia({
 
 export const metadata: Metadata = {
 	title: "Ezequiel Rivero - Productor Musical",
-	description: "Una lista de los discos que colaboré en los últimos 20 años.",
+	description:
+		"Una lista de discos en los que colaboré en los últimos 20 años.",
 	viewport: "width=device-width, initial-scale=1",
 	keywords: [
 		"music",
@@ -67,12 +68,14 @@ export const metadata: Metadata = {
 		locale: "en_US",
 		url: "https://enparticular.net",
 		title: "Ezequiel Rivero - Productor Musical",
-		description: "Una lista de los discos que colaboré en los últimos 20 años.",
+		description:
+			"Una lista de discos en los que colaboré en los últimos 20 años.",
 		siteName: "Ezequiel Rivero - Productor Musical",
 	},
 	twitter: {
 		title: "Ezequiel Rivero - Productor Musical",
-		description: "Una lista de los discos que colaboré en los últimos 20 años.",
+		description:
+			"Una lista de discos en los que colaboré en los últimos 20 años.",
 	},
 };
 
