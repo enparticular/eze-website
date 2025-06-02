@@ -31,7 +31,9 @@
 		".next/types/**/*.ts",
 		"src/types/**/*.d.ts",
 		"src/components/AlbumModal/AlbumModal.test.jsx",
-		"src/components/AlbumModal/AlbumModal.test.jsx"
+		"src/components/AlbumModal/AlbumModal.test.jsx",
+		"src/app/album/[slug]/page.js",
+		"src/app/album/[slug]/page.js"
 	],
-	"exclude": ["node_modules", "scripts/**/*"]
+	"exclude": ["node_modules", "scripts/**/*", "src/app/album/[slug]/page.js"]
 }

@@ -12,17 +12,13 @@ type AlbumWithRelations = Album & {
 	tags: Tag[];
 };
 
-// Define params type for TypeScript
-interface PageParams {
-	params: {
-		slug: string;
-	};
-}
+// TypeScript-safe metadata generation - use Next.js compatible types
 
-// TypeScript-safe metadata generation
 export async function generateMetadata({
 	params,
-}: PageParams): Promise<Metadata> {
+}: {
+	params: { slug: string };
+}): Promise<Metadata> {
 	const album = await getAlbumBySlug(params.slug);
 
 	if (!album) {
@@ -70,7 +66,11 @@ async function getAlbumBySlug(
 }
 
 // Add type safety to the page component
-export default async function AlbumPage({ params }: PageParams) {
+export default async function AlbumPage({
+	params,
+}: {
+	params: { slug: string };
+}) {
 	const album = await getAlbumBySlug(params.slug);
 
 	if (!album) {
