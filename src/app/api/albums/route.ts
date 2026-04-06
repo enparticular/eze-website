@@ -18,16 +18,15 @@ export async function GET(request: Request) {
 							},
 					  }
 					: undefined,
-			include: {
-				links: true,
-				tags: true,
-			},
-			orderBy: {
-				year: "desc",
-			},
-		});
-
-		return NextResponse.json(albums);
+		include: {
+			links: true,
+			tags: true,
+		},
+		orderBy: [
+			{ year: "desc" },
+			{ name: "asc" },
+		],
+	});		return NextResponse.json(albums);
 	} catch (error) {
 		if (error instanceof Prisma.PrismaClientKnownRequestError) {
 			return NextResponse.json(
